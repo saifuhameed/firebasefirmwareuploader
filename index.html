@@ -15,7 +15,8 @@ var config = {
   };
   firebase.initializeApp(config);
   $('#uploadFirmwareFile').change(function() {
-    var file = $('#uploadFirmwareFile')[0].files[0];    
+    var file = $('#uploadFirmwareFile')[0].files[0];  
+    alert(file);
     readFile(file);
   });
   // Read the file chosen by the user.
